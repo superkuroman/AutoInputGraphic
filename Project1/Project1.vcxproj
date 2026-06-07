@@ -102,6 +102,7 @@
     <ClCompile Include="common\mouse.cpp" />
     <ClCompile Include="GameAuto\Common.cpp" />
     <ClCompile Include="GameAuto\GameModeLauncher.cpp" />
+    <ClCompile Include="GameAuto\GraphicTrigger.cpp" />
     <ClCompile Include="InputStep.cpp" />
     <ClCompile Include="main.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdcpp17</LanguageStandard>
@@ -115,6 +116,7 @@
     <ClInclude Include="common\picture.h" />
     <ClInclude Include="GameAuto\Common.h" />
     <ClInclude Include="GameAuto\GameModeLauncher.h" />
+    <ClInclude Include="GameAuto\GraphicTrigger.h" />
     <ClInclude Include="InputStep.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

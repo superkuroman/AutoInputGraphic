@@ -1,0 +1,12 @@
+{
+  "window_title": "Your Game Window Title",
+  "triggers": [
+    {
+      "name": "battle-start",
+      "template_bmp": "templates/battle-start.bmp",
+      "script": "scripts/battle-start.json",
+      "threshold": 0.04,
+      "cooldown_ms": 5000
+    }
+  ]
+}

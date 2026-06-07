@@ -36,10 +36,10 @@ class InputStep
 public:
     explicit InputStep(const char* outFile = "defined_clicks.json");
     void Update();
+    void PlaybackFromFile(const char* filename);
 
 private:
     void SaveToFile(const char* filename);
-    void PlaybackFromFile(const char* filename);
     void HandleRecord();
     void HandleSaveTrigger();
     void HandlePlaybackTrigger();

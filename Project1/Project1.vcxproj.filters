@@ -32,6 +32,9 @@
     <ClInclude Include="GameAuto\GameModeLauncher.h">
       <Filter>GameAuto</Filter>
     </ClInclude>
+    <ClInclude Include="GameAuto\GraphicTrigger.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
     <ClInclude Include="InputStep.h">
       <Filter>common</Filter>
     </ClInclude>
@@ -45,6 +48,9 @@
       <Filter>GameAuto</Filter>
     </ClCompile>
     <ClCompile Include="GameAuto\GameModeLauncher.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAuto\GraphicTrigger.cpp">
       <Filter>GameAuto</Filter>
     </ClCompile>
     <ClCompile Include="InputStep.cpp">
