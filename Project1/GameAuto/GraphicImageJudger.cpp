@@ -5,7 +5,7 @@
 
 namespace
 {
-int ClampInt(int value, int min_value, int max_value)
+inline int ClampInt(int value, int min_value, int max_value)
 {
 	if (value < min_value)
 	{
@@ -16,6 +16,24 @@ int ClampInt(int value, int min_value, int max_value)
 		return max_value;
 	}
 	return value;
+}
+
+inline size_t RowPixelOffset(int x)
+{
+	return static_cast<size_t>(x) * 4;
+}
+
+inline unsigned int AbsDiff(unsigned char lhs, unsigned char rhs)
+{
+	return lhs > rhs ? lhs - rhs : rhs - lhs;
+}
+
+inline unsigned int ColorDiff(const unsigned char* lhs, const unsigned char* rhs)
+{
+	return
+		AbsDiff(lhs[0], rhs[0]) +
+		AbsDiff(lhs[1], rhs[1]) +
+		AbsDiff(lhs[2], rhs[2]);
 }
 }
 
@@ -54,11 +72,9 @@ double GraphicImageJudger::CompareAt(const GraphicImage& screen, const GraphicIm
 		const size_t templ_row = static_cast<size_t>(y) * templ.width * 4;
 		for (int x = 0; x < templ.width; ++x)
 		{
-			const size_t screen_index = screen_row + static_cast<size_t>(left + x) * 4;
-			const size_t templ_index = templ_row + static_cast<size_t>(x) * 4;
-			total_diff += abs(static_cast<int>(screen.bgra[screen_index + 0]) - static_cast<int>(templ.bgra[templ_index + 0]));
-			total_diff += abs(static_cast<int>(screen.bgra[screen_index + 1]) - static_cast<int>(templ.bgra[templ_index + 1]));
-			total_diff += abs(static_cast<int>(screen.bgra[screen_index + 2]) - static_cast<int>(templ.bgra[templ_index + 2]));
+			const size_t screen_index = screen_row + RowPixelOffset(left + x);
+			const size_t templ_index = templ_row + RowPixelOffset(x);
+			total_diff += ColorDiff(&screen.bgra[screen_index], &templ.bgra[templ_index]);
 		}
 	}
 

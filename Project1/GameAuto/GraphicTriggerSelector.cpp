@@ -13,7 +13,7 @@ constexpr DWORD kScanIntervalMs = 500;
 constexpr double kDefaultThreshold = 0.04;
 constexpr DWORD kDefaultCooldownMs = 5000;
 
-double ClampDouble(double value, double min_value, double max_value)
+inline double ClampDouble(double value, double min_value, double max_value)
 {
 	if (value < min_value)
 	{
@@ -26,7 +26,7 @@ double ClampDouble(double value, double min_value, double max_value)
 	return value;
 }
 
-std::wstring ToWide(const std::string& text)
+inline std::wstring ToWide(const std::string& text)
 {
 	if (text.empty())
 	{

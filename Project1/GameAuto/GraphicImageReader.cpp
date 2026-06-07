@@ -10,7 +10,7 @@
 
 namespace
 {
-std::wstring ToWide(const std::string& text)
+inline std::wstring ToWide(const std::string& text)
 {
 	if (text.empty())
 	{
