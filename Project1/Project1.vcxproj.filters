@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameAuto">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="InputSetp">
+      <UniqueIdentifier>{ef005b3a-4b55-4960-83de-b1a57c0146be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\mouse.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\picture.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\keyboard.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Me_include.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAuto\Common.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAuto\GameModeLauncher.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
+    <ClInclude Include="InputStep.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\mouse.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameAuto\Common.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAuto\GameModeLauncher.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="InputStep.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
