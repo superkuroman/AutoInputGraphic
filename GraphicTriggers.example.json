@@ -3,7 +3,7 @@
   "triggers": [
     {
       "name": "battle-start",
-      "template_bmp": "templates/battle-start.bmp",
+      "template_image": "templates/battle-start.jpg",
       "script": "scripts/battle-start.json",
       "threshold": 0.04,
       "cooldown_ms": 5000

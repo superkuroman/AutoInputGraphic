@@ -4,7 +4,7 @@
 #include "common/mouse.h"
 #include "InputStep.h"
 #include "GameAuto/GameModeLauncher.h"
-#include "GameAuto/GraphicTrigger.h"
+#include "GameAuto/GraphicTriggerSelector.h"
 
 namespace
 {
@@ -107,7 +107,7 @@ void RunDefaultAutoInput()
 int main()
 {
 	InputStep input("TargetClicks.json");
-	GraphicTrigger graphic("GraphicTriggers.json");
+	GraphicTriggerSelector graphic("GraphicTriggers.json");
 	while (true)
 	{
 		input.Update();

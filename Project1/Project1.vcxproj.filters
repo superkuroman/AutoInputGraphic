@@ -32,7 +32,16 @@
     <ClInclude Include="GameAuto\GameModeLauncher.h">
       <Filter>GameAuto</Filter>
     </ClInclude>
-    <ClInclude Include="GameAuto\GraphicTrigger.h">
+    <ClInclude Include="GameAuto\GraphicImageJudger.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAuto\GraphicImageReader.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAuto\GraphicScreenAccessor.h">
+      <Filter>GameAuto</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAuto\GraphicTriggerSelector.h">
       <Filter>GameAuto</Filter>
     </ClInclude>
     <ClInclude Include="InputStep.h">
@@ -50,7 +59,16 @@
     <ClCompile Include="GameAuto\GameModeLauncher.cpp">
       <Filter>GameAuto</Filter>
     </ClCompile>
-    <ClCompile Include="GameAuto\GraphicTrigger.cpp">
+    <ClCompile Include="GameAuto\GraphicImageJudger.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAuto\GraphicImageReader.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAuto\GraphicScreenAccessor.cpp">
+      <Filter>GameAuto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAuto\GraphicTriggerSelector.cpp">
       <Filter>GameAuto</Filter>
     </ClCompile>
     <ClCompile Include="InputStep.cpp">
